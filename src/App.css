@@ -1,4 +1,13 @@
-.all{background: rgb(240, 222, 206);
-    height: 100%;
-    background: linear-gradient(135deg, rgba(240, 222, 206, 1) 0%, rgba(252, 199, 169, 1) 25%, rgba(249, 177, 152, 1) 50%, rgba(245, 145, 128, 1) 75%, rgba(240, 113, 103, 1) 100%);
+.all {
+  /* background: rgb(240, 222, 206); */
+  height: 100vh;
+  background-color: #192636;
+  /* overflow: auto; */
+  /* background: linear-gradient(
+    135deg,
+    rgba(240, 222, 206, 1) 0%,
+    rgba(252, 199, 169, 1) 25%,
+    rgba(249, 177, 152, 1) 50%,
+    rgba(245, 145, 128, 1) 75%,
+    rgba(240, 113, 103, 1) 100% */
 }
