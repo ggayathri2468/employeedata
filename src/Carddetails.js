@@ -13,6 +13,7 @@ import Addcard from "./Addcard";
 import night from "./assests/night.jpg";
 import sy from "./assests/sy.jpg";
 import moon from "./assests/moon.jpg";
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import "./Carddetails.css";
 function Carddetails({
   cardinput,
@@ -29,32 +30,41 @@ function Carddetails({
             backgroundColor: "cyan",
             height: "100vh",
             width: "40%",
-            transform: "translate(50%,0%)",
+            transform: "translate(75%,0%)",
           }}
         >
           <form onSubmit={cardinput.handleSubmit}>
             <Box
               sx={{
-                backgroundImage: `url(${sy})`,
-                backgroundSize: "100% 40%",
-                //  height: 100,
-                backgroundPosition: "top",
-                //backgroundSize: "400px 400px",
-                backgroundRepeat: "no-repeat",
+                backgroundColor: "white",
+                // backgroundImage: `url(${'AbstractPaper'})`,
+                // backgroundSize: "100% 30%",
+                // //  height: 100,
+                // backgroundPosition: "top",
+                // //backgroundSize: "400px 400px",
+                // backgroundRepeat: "no-repeat",
               }}
             >
+              <AccountCircleIcon
+                sx={{
+                  paddingLeft: 27,
+                  fontSize: "100px",
+                }}
+              />
               <Card
                 className="card1"
                 sx={{
+                  overflow: "auto",
                   borderRadius: "30px 30px 0px 0px",
-                  transform: "translate(0%,24.8%)",
+                  transform: "translate(0%,4.5%)",
                   height: 500,
+                  backgroundColor: "#f2f2f2",
                   // background: "rgb(0,175,185)",
                   // background:
                   //   "linear-gradient(135deg, rgba(0,175,185,1) 0%, rgba(254,217,183,1) 100%)",
                 }}
               >
-                <h3 style={{ textAlign: "center" }}>
+                <h3 style={{ textAlign: "center", fontFamily: "ebrima" }}>
                   Employee Registration form
                 </h3>
                 <CardContent>
@@ -156,7 +166,13 @@ function Carddetails({
                   </Grid>
                 </CardContent>
                 <CardActions>
-                  <Button size="small" color="primary" type="submit">
+                  <Button
+                    size="small"
+                    variant="contained"
+                    color="primary"
+                    type="submit"
+                    sx={{ width: "100%" }}
+                  >
                     Submit
                   </Button>
                 </CardActions>

@@ -1,0 +1,1 @@
+red--#ef5455    blue--#2b3252  yellow--#fad744
